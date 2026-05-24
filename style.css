@@ -750,3 +750,75 @@ ul { list-style: none; }
 }
 
 .nav-overlay.active { display: block; }
+/* ===========================
+   CARTA — foto de cabecera de sección
+   =========================== */
+.carta-bloque-img-wrap {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--gris-borde);
+}
+
+@media (min-width: 768px) {
+  .carta-bloque-img-wrap { height: 260px; }
+}
+
+.carta-bloque-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.carta-bloque-img-wrap:hover .carta-bloque-img {
+  transform: scale(1.03);
+}
+
+/* ===========================
+   CARTA — lista sin foto
+   =========================== */
+.carta-lista {
+  list-style: none;
+  border: 1px solid var(--gris-borde);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.carta-lista-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.1rem;
+  border-bottom: 1px solid var(--gris-borde);
+  background: var(--blanco);
+  transition: background var(--transition);
+  gap: 1rem;
+}
+
+.carta-lista-item:last-child {
+  border-bottom: none;
+}
+
+.carta-lista-item:hover {
+  background: var(--naranja-claro);
+}
+
+.carta-lista-nombre {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--texto);
+  line-height: 1.3;
+}
+
+.carta-lista-precio {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--naranja);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
