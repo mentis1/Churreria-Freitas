@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Churrería Freitas — Horno de Pan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#inicio" class="nav-logo">
+      <img src="img/logo.jpg" alt="Churrería Freitas" />
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="#carta" class="nav-link">Carta</a></li>
+      <li><a href="#horarios" class="nav-link">Horarios</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="img/foto_churros_hero.jpg" alt="Churros Freitas" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Desde Ciudad Lineal, Madrid</p>
+      <h1 class="hero-title">El sabor<br/>de siempre.</h1>
+      <p class="hero-sub">Churros y porras recién hechos cada mañana.<br/>Horno de pan artesanal.</p>
+      <a href="#carta" class="btn-primary">Ver la carta</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="container nosotros-grid">
+      <div class="nosotros-text">
+        <p class="section-label">Quiénes somos</p>
+        <h2 class="section-title">Una mañana en Churrería Freitas es una mañana bien empezada.</h2>
+        <p>En el corazón de Ciudad Lineal, Churrería Freitas lleva años siendo la primera parada del día para los vecinos del barrio. Nos levantamos antes que nadie para que tú llegues y encuentres los churros recién salidos del aceite, el pan del horno todavía caliente y el chocolate en su punto justo.</p>
+        <p>Somos churrería, panadería y mucho más: bocadillos, bollería artesanal, pasteles... Todo hecho con el cuidado de siempre y la calidez de un local de toda la vida.</p>
+        <p>Abrimos todos los días de <strong>6:00 a 14:00</strong>. Sin excusas para saltarse el desayuno.</p>
+      </div>
+      <div class="nosotros-img-wrap">
+        <img src="img/fotointerior.png" alt="Interior Churrería Freitas" class="nosotros-img" />
+        <div class="nosotros-badge">
+          <span class="badge-num">7</span>
+          <span class="badge-text">días<br/>a la semana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section class="carta" id="carta">
+    <div class="container">
+      <p class="section-label">Lo que ofrecemos</p>
+      <h2 class="section-title">Nuestra carta</h2>
+
+      <!-- CHURROS Y PORRAS -->
+      <div class="carta-bloque">
+        <h3 class="carta-categoria">🥐 Churros & Porras</h3>
+        <p class="carta-nota">Precio por unidad. Pídelos solos o con chocolate.</p>
+        <div class="carta-items">
+
+          <div class="carta-item">
+            <div class="carta-item-img">
+              <img src="img/foto_porra.jpg" alt="Porra" />
+            </div>
+            <div class="carta-item-info">
+              <span class="carta-item-nombre">Porra</span>
+              <span class="carta-item-precio">0,60 € / ud</span>
+            </div>
+          </div>
+
+          <div class="carta-item">
+            <div class="carta-item-img">
+              <img src="img/foto_churro.jpg" alt="Churro" />
+            </div>
+            <div class="carta-item-info">
+              <span class="carta-item-nombre">Churro</span>
+              <span class="carta-item-precio">0,40 € / ud</span>
+            </div>
+          </div>
+
+          <div class="carta-item">
+            <div class="carta-item-img">
+              <img src="img/foto_chocolate_vaso.jpg" alt="Vaso de Chocolate" />
+            </div>
+            <div class="carta-item-info">
+              <span class="carta-item-nombre">Vaso Chocolate</span>
+              <span class="carta-item-precio">3,00 €</span>
+            </div>
+          </div>
+
+          <div class="carta-item">
+            <div class="carta-item-img">
+              <img src="img/foto_chocolate_medio_litro.jpg" alt="Chocolate Medio Litro" />
+            </div>
+            <div class="carta-item-info">
+              <span class="carta-item-nombre">Chocolate ½ Litro</span>
+              <span class="carta-item-precio">5,25 €</span>
+            </div>
+          </div>
+
+          <div class="carta-item">
+            <div class="carta-item-img">
+              <img src="img/foto_chocolate_litro.jpg" alt="Chocolate 1 Litro" />
+            </div>
+            <div class="carta-item-info">
+              <span class="carta-item-nombre">Chocolate 1 Litro</span>
+              <span class="carta-item-precio">8,00 €</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tabla de cantidades -->
+        <div class="churros-tabla-wrap">
+          <p class="carta-nota" style="margin-bottom:0.75rem;">¿Cuántos quieres? Precio según cantidad:</p>
+          <div class="churros-tabla">
+            <div class="churros-tabla-head">
+              <span>Uds.</span><span>Porras</span><span>Churros</span>
+            </div>
+            <div class="churros-tabla-body" id="churrosTabla">
+              <!-- generado por JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANES Y VARIOS -->
+      <div class="carta-bloque">
+        <h3 class="carta-categoria">🍞 Panes y Varios</h3>
+        <div class="carta-items">
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pistola.jpg" alt="Pistola" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pistola</span><span class="carta-item-precio">0,75 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_segoviana.jpg" alt="Segoviana" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Segoviana</span><span class="carta-item-precio">0,95 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_viena.jpg" alt="Viena" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Viena</span><span class="carta-item-precio">0,95 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pan_candeal.jpg" alt="Pan Candeal" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pan Candeal</span><span class="carta-item-precio">0,70 €</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEBIDAS -->
+      <div class="carta-bloque">
+        <h3 class="carta-categoria">☕ Bebidas</h3>
+        <div class="carta-items">
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_cafe.jpg" alt="Café" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Café</span><span class="carta-item-precio">1,30 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_batido_chocolate.jpg" alt="Batido Chocolate" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Batido Chocolate</span><span class="carta-item-precio">0,80 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_biofrutas.jpg" alt="Biofrutas" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Biofrutas</span><span class="carta-item-precio">0,95 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_cafe_frio.jpg" alt="Café Frío" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Café Frío</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_cerveza.jpg" alt="Cerveza" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Cerveza</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_cocacola.jpg" alt="Cocacola" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Cocacola</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_cocacola_zero.jpg" alt="Cocacola Zero" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Cocacola Zero</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_aquarius_limon.jpg" alt="Aquarius Limón" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Aquarius Limón</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_aquarius_naranja.jpg" alt="Aquarius Naranja" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Aquarius Naranja</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_nestea.jpg" alt="Nestea" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Nestea</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_agua_pequena.jpg" alt="Agua Pequeña" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Agua Pequeña</span><span class="carta-item-precio">0,80 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_agua_grande.jpg" alt="Agua Grande" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Agua Grande</span><span class="carta-item-precio">1,10 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_brick_leche.jpg" alt="Brick Leche" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Brick Leche</span><span class="carta-item-precio">1,70 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_brick_chocolate.jpg" alt="Brick Chocolate" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Brick Chocolate</span><span class="carta-item-precio">3,75 €</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALADO -->
+      <div class="carta-bloque">
+        <h3 class="carta-categoria">🥪 Salado</h3>
+        <div class="carta-items">
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pollo_chilindron.jpg" alt="Pollo Chilindron" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pollo Chilindron</span><span class="carta-item-precio">2,30 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_atun.jpg" alt="Atún" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Atún</span><span class="carta-item-precio">2,30 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_ternera.jpg" alt="Ternera" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Ternera</span><span class="carta-item-precio">2,30 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_panini.jpg" alt="Panini" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Panini</span><span class="carta-item-precio">2,30 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_carne_picante.jpg" alt="Carne Picante" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Carne Picante</span><span class="carta-item-precio">2,00 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_carne_cuchillo.jpg" alt="Carne Cuchillo" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Carne Cuchillo</span><span class="carta-item-precio">2,00 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_cecina_queso_cabra.jpg" alt="Cecina y Queso de Cabra" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Cecina y Queso de Cabra</span><span class="carta-item-precio">2,00 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pollo_curry.jpg" alt="Pollo al Curry" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pollo al Curry</span><span class="carta-item-precio">2,00 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_napolitana_jamon.jpg" alt="Napolitana Jamón" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Napolitana Jamón</span><span class="carta-item-precio">2,00 €</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_sandwich_jamon.jpg" alt="Sandwich Jamón" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Sandwich Jamón</span><span class="carta-item-precio">2,00 €</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOLLERÍA AL PESO -->
+      <div class="carta-bloque">
+        <h3 class="carta-categoria">⚖️ Bollería al Peso</h3>
+        <p class="carta-nota">Precio por kilogramo.</p>
+        <div class="carta-items">
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_mini_croissant.jpg" alt="Mini Croissant" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Mini Croissant</span><span class="carta-item-precio">12,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_magdalenas.jpg" alt="Magdalenas" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Magdalenas</span><span class="carta-item-precio">12,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_manolitos.jpg" alt="Manolitos" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Manolitos</span><span class="carta-item-precio">21,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_palmeritas_mojadas.jpg" alt="Palmeritas Mojadas" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Palmeritas Mojadas</span><span class="carta-item-precio">17,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_mini_bolleria.jpg" alt="Mini Bollería" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Mini Bollería</span><span class="carta-item-precio">15,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pasteles.jpg" alt="Pasteles" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pasteles</span><span class="carta-item-precio">25,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_tartas.jpg" alt="Tartas" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Tartas</span><span class="carta-item-precio">25,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pastas_te.jpg" alt="Pastas de Té" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pastas de Té</span><span class="carta-item-precio">25,50 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pastas_normales.jpg" alt="Pastas Normales" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pastas Normales</span><span class="carta-item-precio">12,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pastas_integrales.jpg" alt="Pastas Integrales" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pastas Integrales</span><span class="carta-item-precio">13,95 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_bizcochos_anis.jpg" alt="Bizcochos Anís" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Bizcochos Anís</span><span class="carta-item-precio">10,50 €/kg</span></div>
+          </div>
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_pastas_grandes.jpg" alt="Pastas Grandes" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Pastas Grandes</span><span class="carta-item-precio">16,50 €/kg</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOLLERÍA INDIVIDUAL -->
+      <div class="carta-bloque">
+        <h3 class="carta-categoria">🥐 Bollería Individual</h3>
+        <div class="carta-items">
+          <div class="carta-item">
+            <div class="carta-item-img"><img src="img/foto_croissant.jpg" alt="Croissant" /></div>
+            <div class="carta-item-info"><span class="carta-item-nombre">Croissant</span><span class="carta-item-precio">1,20 €</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HORARIOS Y LOCALIZACIÓN -->
+  <section class="horarios" id="horarios">
+    <div class="container horarios-grid">
+      <div class="horarios-info">
+        <p class="section-label">Encuéntranos</p>
+        <h2 class="section-title">Horarios &<br/>Localización</h2>
+        <div class="horarios-datos">
+          <div class="horario-row">
+            <span class="horario-dia">Lunes — Domingo</span>
+            <span class="horario-hora">6:00 — 14:00</span>
+          </div>
+        </div>
+        <div class="direccion-block">
+          <p class="direccion-label">Dirección</p>
+          <p class="direccion-texto">C/ Luis Ruiz, 52<br/>Ciudad Lineal, Madrid</p>
+          <a href="https://maps.google.com/?q=C/+Luis+Ruiz+52,+Madrid" target="_blank" class="btn-secondary">Cómo llegar →</a>
+        </div>
+      </div>
+      <div class="horarios-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5!2d-3.6522!3d40.4422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQy8gTHVpcyBSdWl6IDUyLCBNYWRyaWQ!5e0!3m2!1ses!2ses!4v1"
+          width="100%" height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Churrería Freitas">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container contacto-inner">
+      <p class="section-label">Habla con nosotros</p>
+      <h2 class="section-title">Contacto</h2>
+      <div class="contacto-cards">
+
+        <a href="tel:914073742" class="contacto-card">
+          <div class="contacto-icon">📞</div>
+          <div class="contacto-card-info">
+            <span class="contacto-card-label">Teléfono</span>
+            <span class="contacto-card-valor">914073742</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/churreriafreitas" target="_blank" class="contacto-card">
+          <div class="contacto-icon">📸</div>
+          <div class="contacto-card-info">
+            <span class="contacto-card-label">Instagram</span>
+            <span class="contacto-card-valor">@churreriafreitas</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="footer-logo">
+        <img src="img/logo.jpg" alt="Churrería Freitas" />
+      </a>
+      <p class="footer-copy">© 2025 Churrería Freitas · C/ Luis Ruiz, 52, Madrid · Todos los días 6:00–14:00</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
